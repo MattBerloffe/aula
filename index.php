@@ -3,12 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ficha de empregado</title>
+    <title>Ficha de Empregados</title>
 </head>
+
 <h1>Ficha de Empregados</h1>
+
 <body>
+
 <?php 
-//wesley é burro
 
 $nome = "Wesley";
 $cargo = "Montador junior";
@@ -25,7 +27,8 @@ echo("Nome: $nome <br>
 </html>
 
 <?php 
-/*//wesley é burro
+
+/*
 
 $nome = "wesley";
 $cargo = "montador de persiana junior";
