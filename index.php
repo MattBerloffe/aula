@@ -63,6 +63,11 @@ switch($estado) {
 
 
 
+
+
+
+
+
 ?>
 
 <!-- <!DOCTYPE html>
@@ -96,7 +101,7 @@ switch($estado) {
 <!-- ************DESAFIO CLIMA************ -->
 
 
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
@@ -116,4 +121,46 @@ switch($estado) {
     <button type="submit" value="Enviar">Enviar</button>
 </form>
 </body>
+</html> -->
+<?php
+if ($_GET) {
+    $nome = $_GET['nome'];
+    $email = $_GET['email'];
+
+    echo("O nome inserido é $nome e o email inserido é $email !");
+}
+
+?>
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+
+<h1>Buscar</h1>
+
+<form action="index.php" method="get">
+
+<label for="nome">Nome:</label>
+    <input type="text" name="nome" id="nome" placeholder="Digite seu nome..." required>
+<br>
+<br>
+   <label for="nome">Email:</label>
+   <input type="text" name="email" id="email" placeholder="Digite seu email..." required>
+<br>
+<br>
+<button type="submit" value="Enviar">Enviar</button>
+</form>
+
+
+</body>
+
+
+
 </html>
+

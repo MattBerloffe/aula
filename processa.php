@@ -15,7 +15,8 @@
 
 
 // -- ************DESAFIO CLIMA************
-            //      ERRADO
+            
+    //    ************ERRADO************
 
 // $clima = $_POST['clima'];
 
@@ -44,16 +45,35 @@
 //         print_r("nada");
 //     }
 
-   $clima = $_POST['clima'];
+// ************CERTO************
 
-if ($clima >= 30) {
-    print_r("Dia quente !");
-} elseif ($clima >= 20 && $clima <= 29) {
-    print_r("Clima agradável !");
-} elseif ($clima < 20) {
-    print_r("Dia frio !");
-} else {
-    print_r("Valor inválido");
-}
+// $clima = $_POST['clima'];
+
+// if ($clima >= 30) {
+//     print_r("Dia quente !");
+// } elseif ($clima >= 20 && $clima <= 29) {
+//     print_r("Clima agradável !");
+// } elseif ($clima < 20) {
+//     print_r("Dia frio !");
+// } else {
+//     print_r("Valor inválido");
+// }
+?>
+
+<?php
+
+
+?>
+
+
+
+
+
+
+
+
+
+
+
 
 ?>
