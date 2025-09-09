@@ -122,18 +122,19 @@ switch($estado) {
 </form>
 </body>
 </html> -->
-<?php
-if ($_GET) {
-    $nome = $_GET['nome'];
-    $email = $_GET['email'];
 
-    echo("O nome inserido é $nome e o email inserido é $email !");
-}
+<!-- <?php
+// if ($_GET) {
+//     $nome = $_GET['nome'];
+//     $email = $_GET['email'];
 
-?>
+//     echo("O nome inserido é $nome e o email inserido é $email !");
+// }
+
+?> -->
 
 
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
@@ -160,7 +161,41 @@ if ($_GET) {
 
 </body>
 
+</html> -->
 
-
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Tabuada</title>
+</head>
+<body>
+    <h2>Tabuada</h2>
+ 
+    <form method="post">
+        <label for="numero">Número:</label>
+        <select name="numero" id="numero">
+            <?php
+            for ($i = 1; $i <= 10; $i++) {
+                echo "<option value='$i'>$i</option>";
+            }
+            ?>
+        </select>
+        <button type="submit">Mostrar</button>
+    </form>
+ 
+    <?php
+    if ($_SERVER["REQUEST_METHOD"] = "POST") {
+        
+        $numero = $_POST["numero"];
+ 
+        echo "<h3>Tabuada do $numero</h3>";
+        
+        for ($i = 1; $i <= 10; $i++) {
+            $resultado = $numero * $i;
+            echo "$numero x $i = $resultado<br>";
+        }
+    }
+    ?>
+</body>
 </html>
-
